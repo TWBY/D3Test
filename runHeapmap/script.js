@@ -62,7 +62,7 @@ var myColor = d3.scaleLinear()
     .range(["white", "#69b3a2"])
     .domain([1, 100])
 
-axios.get('RuningData.json')
+axios.get('runData.json')
     .then(function (response) {
         // handle success
         data = response.data
