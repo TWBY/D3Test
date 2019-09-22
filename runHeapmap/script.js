@@ -39,15 +39,14 @@ let Week = [
     5,
 ];
 
-
 // Build X scales and axis:
 var x = d3.scaleBand()
     .domain(DaysOfWeek)
     .range([0, width])
 
 svg.append("g")
-    .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x))
+    .attr("transform", "translate(0)")
+    .call(d3.axisTop(x))
 
 // Build Y scales and axis:
 var y = d3.scaleBand()
@@ -62,14 +61,14 @@ var myColor = d3.scaleLinear()
     .range(["white", "#69b3a2"])
     .domain([1, 100])
 
-axios.get('runData.json')
+axios.get('RunningData.json')
     .then(function (response) {
         // handle success
         data = response.data
         let startDaysOfWeek = data[0].daysOfWeek
         let DayIndex = DaysOfWeek.indexOf(startDaysOfWeek)
         let weekIndex = 1
-        // console.log("startDaysOfWeek = ", startDaysOfWeek, "DayIndex = ", DayIndex)
+
         for (let i = 0; i < data.length; i++) {
             let runData = {
                 "daysOfWeek": null,
@@ -96,22 +95,28 @@ axios.get('runData.json')
         showData()
     })
 
-
 function showData() {
     console.log("runData=  ", runDataArray)
-    svg.selectAll("rect")
+    let g = svg.selectAll(".runSet")
         .data(runDataArray)
         .enter()
-        .append("rect")
-        .attr("x", function (d) {
-            return x(d.daysOfWeek)
+        .append("g")
+        .attr("transform", function (d) {
+            return "translate(" + x(d.daysOfWeek) + "," + y(d.week) + ")";
         })
-        .attr("y", function (d) {
-            return y(d.week)
-        })
+        .attr("class", "runSet")
+
+    g.append("rect")
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
         .style("fill", function (d) {
             return myColor(d.duration)
         })
+
+    g.append("text")
+        .style("fill", "black")
+        .text(function (d) {
+            return d.date
+        })
+        .attr("transform", "translate(0, 15)")
 }

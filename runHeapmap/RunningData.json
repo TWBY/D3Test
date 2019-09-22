@@ -1,5 +1,5 @@
 [{
-        "date": 1,
+        "date": "10/1",
         "runningSet": [{
             "duration": null,
             "total_distance": null
@@ -8,140 +8,140 @@
         "week": 1
     },
     {
-        "date": 2,
+        "date": "10/2",
         "runningSet": [{
             "duration": 40,
             "total_distance": 4.3
         }]
     },
     {
-        "date": 3,
+        "date": "10/3",
         "runningSet": [{
             "duration": 43,
             "total_distance": 4.26
         }]
     },
     {
-        "date": 4,
+        "date": "10/4",
         "runningSet": [{
             "duration": 43,
             "total_distance": 4.31
         }]
     },
     {
-        "date": 5,
+        "date": "10/5",
         "runningSet": [{
             "duration": 33,
             "total_distance": 4.25
         }]
     },
     {
-        "date": 6,
+        "date": "10/6",
         "runningSet": [{
             "duration": 37,
             "total_distance": 4.20
         }]
     },
     {
-        "date": 7,
+        "date": "10/7",
         "runningSet": [{
             "duration": 50,
             "total_distance": 8.57
         }]
     },
     {
-        "date": 8,
+        "date": "10/8",
         "runningSet": [{
             "duration": null,
             "total_distance": null
         }]
     },
     {
-        "date": 9,
+        "date": "10/9",
         "runningSet": [{
             "duration": null,
             "total_distance": null
         }]
     },
     {
-        "date": 10,
+        "date": "10/10",
         "runningSet": [{
             "duration": 40,
             "total_distance": 4.26
         }]
     },
     {
-        "date": 11,
+        "date": "10/11",
         "runningSet": [{
             "duration": 38,
             "total_distance": 4.30
         }]
     },
     {
-        "date": 12,
+        "date": "10/12",
         "runningSet": [{
             "duration": null,
             "total_distance": null
         }]
     },
     {
-        "date": 13,
+        "date": "10/13",
         "runningSet": [{
             "duration": 40,
             "total_distance": 4.26
         }]
     },
     {
-        "date": 14,
+        "date": "10/14",
         "runningSet": [{
             "duration": 43,
             "total_distance": 4.26
         }]
     },
     {
-        "date": 15,
+        "date": "10/15",
         "runningSet": [{
             "duration": null,
             "total_distance": null
         }]
     },
     {
-        "date": 16,
+        "date": "10/16",
         "runningSet": [{
             "duration": 53,
             "total_distance": 6.43
         }]
     },
     {
-        "date": 17,
+        "date": "10/17",
         "runningSet": [{
             "duration": 68,
             "total_distance": 7.2
         }]
     },
     {
-        "date": 18,
+        "date": "10/18",
         "runningSet": [{
             "duration": 63,
             "total_distance": 8.0
         }]
     },
     {
-        "date": 19,
+        "date": "10/19",
         "runningSet": [{
             "duration": null,
             "total_distance": null
         }]
     },
     {
-        "date": 20,
+        "date": "10/20",
         "runningSet": [{
             "duration": 43,
             "total_distance": 4.26
         }]
     },
     {
-        "date": 21,
+        "date": "10/21",
         "runningSet": [{
                 "duration": 63,
                 "total_distance": 8.70
@@ -153,14 +153,14 @@
         ]
     },
     {
-        "date": 22,
+        "date": "10/22",
         "runningSet": [{
             "duration": null,
             "total_distance": null
         }]
     },
     {
-        "date": 23,
+        "date": "10/23",
         "runningSet": [{
                 "duration": 68,
                 "total_distance": 8.70
@@ -172,14 +172,14 @@
         ]
     },
     {
-        "date": 24,
+        "date": "10/24",
         "runningSet": [{
             "duration": 57,
             "total_distance": 7.9
         }]
     },
     {
-        "date": 25,
+        "date": "10/25",
         "runningSet": [{
                 "duration": 63,
                 "total_distance": 8.45
@@ -191,42 +191,42 @@
         ]
     },
     {
-        "date": 26,
+        "date": "10/26",
         "runningSet": [{
             "duration": 43,
             "total_distance": 4.26
         }]
     },
     {
-        "date": 27,
+        "date": "10/27",
         "runningSet": [{
             "duration": 43,
             "total_distance": 4.26
         }]
     },
     {
-        "date": 28,
+        "date": "10/28",
         "runningSet": [{
             "duration": 65,
             "total_distance": 8.53
         }]
     },
     {
-        "date": 29,
+        "date": "10/29",
         "runningSet": [{
             "duration": null,
             "total_distance": null
         }]
     },
     {
-        "date": 30,
+        "date": "10/30",
         "runningSet": [{
             "duration": 53,
             "total_distance": 4.26
         }]
     },
     {
-        "date": 31,
+        "date": "10/31",
         "runningSet": [{
             "duration": 43,
             "total_distance": 4.26
