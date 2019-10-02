@@ -9,7 +9,7 @@ var margin = {
 };
 
 let width = 450;
-let height = 450;
+let height = 650;
 
 // append the svg object to the body of the page
 var svg = d3.select("#runData")
@@ -37,6 +37,10 @@ let Week = [
     3,
     4,
     5,
+    6,
+    7,
+    8,
+    9,
 ];
 
 // Build X scales and axis:
@@ -82,6 +86,10 @@ axios.get('RunningData.json')
                 weekIndex++
             }
 
+            if (i > 1 && data[i].date.month != data[i - 1].date.month) {
+                weekIndex = 1;
+            }
+
             runData.daysOfWeek = DaysOfWeek[DayIndex]
             runData.week = weekIndex
             runData.date = data[i].date
@@ -89,20 +97,24 @@ axios.get('RunningData.json')
                 runData.duration += data[i].runningSet[j].duration
             }
             DayIndex++;
-
             runDataArray.push(runData)
         }
         showData()
     })
 
 function showData() {
-    console.log("runData=  ", runDataArray)
+    // console.log("runData=  ", runDataArray)
     let g = svg.selectAll(".runSet")
         .data(runDataArray)
         .enter()
         .append("g")
         .attr("transform", function (d) {
-            return "translate(" + x(d.daysOfWeek) + "," + y(d.week) + ")";
+            if (d.date.month == 11) {
+                return "translate(" + x(d.daysOfWeek) + "," + y(d.week + 4) + ")";
+            } else {
+                return "translate(" + x(d.daysOfWeek) + "," + y(d.week) + ")";
+            }
+
         })
         .attr("class", "runSet")
 
@@ -112,11 +124,12 @@ function showData() {
         .style("fill", function (d) {
             return myColor(d.duration)
         })
+        .style("stroke", "blue")
 
     g.append("text")
         .style("fill", "black")
         .text(function (d) {
-            return d.date
+            return d.date.month + "/" + d.date.day
         })
         .attr("transform", "translate(0, 15)")
 }
