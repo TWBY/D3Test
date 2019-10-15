@@ -20,7 +20,6 @@ var svg = d3.select("#runData")
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
-
 let DaysOfWeek = [
     'Sun',
     'Mon',
